@@ -1,0 +1,47 @@
+/* Project: Design a store database
+Create your own store! Your store should sell one type of things,like clothing or bikes, whatever you want your store to specialize in.
+You should have a table for all the items in your store, and at least 5 columns for the kind of data you think you'd need to store.
+You should sell at least 15 items, and use select statements to order your items by price and show at least one statistic about the items.
+CREATE TABLE 
+    gym_supplies
+        (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, material TEXT, customer_rating INTEGER);
+        
+INSERT INTO gym_supplies VALUES (1, "Water Bottle", 15, "Plastic", 9);
+INSERT INTO gym_supplies VALUES (2, "Gym Bag", 25, "Nylon", 5);
+INSERT INTO gym_supplies VALUES (3, "Resistance Band", 5, "Rubber", 5);
+INSERT INTO gym_supplies VALUES (4, "Massage Gun", 60, "Metal", 9);
+INSERT INTO gym_supplies VALUES (5, "Versa Grips", 35, "Leather", 7);
+INSERT INTO gym_supplies VALUES (6, "Pre-Workout", 40, "Synthetic", 9);
+INSERT INTO gym_supplies VALUES (7, "Shaker Bottle", 10, "Plastic", 6); 
+INSERT INTO gym_supplies VALUES (8, "Lifting Belt", 100, "Leather", 10); 
+INSERT INTO gym_supplies VALUES (9, "Deodorant", 10, "Synthetic", 10);
+INSERT INTO gym_supplies VALUES (10, "Headphones", 80, "Plastic", 10);
+INSERT INTO gym_supplies VALUES (11, "Sneakers", 150, "Nylon", 10);
+INSERT INTO gym_supplies VALUES (12, "Dri-Fit Shirt", 30, "Nylon", 7);
+INSERT INTO gym_supplies VALUES (13, "Sweatband", 12, "Cotton", 4);
+INSERT INTO gym_supplies VALUES (14, "Clips", 7, "Plastic", 3);
+INSERT INTO gym_supplies VALUES (15, "Protein Powder", 60, "Synthetic", 10);
+
+SELECT
+    id, name, price
+FROM
+    gym_supplies
+ORDER BY
+    price;
+    
+SELECT
+    name, customer_rating
+FROM
+    gym_supplies
+WHERE
+    customer_rating >= 8
+ORDER BY
+    customer_rating;
+    
+SELECT
+    MAX(price), id, name
+FROM
+    gym_supplies;
+*/
+    
+  
